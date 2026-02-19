@@ -6,9 +6,4 @@ public class Director extends Person {
         super(name, surname, gender);
         this.numberOfShows = numberOfShows;
     }
-
-    @Override
-    public String toString() {
-        return getName() + " " + getSurname();
-    }
 }

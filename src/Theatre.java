@@ -42,14 +42,14 @@ public class Theatre {
         printActorsShow(opera);
         printActorsShow(ballet);
 
-        show.replaceActor(act1, act3);
+        show.replaceActor("Вишнёва", act3);
         printActorsShow(show);
 
-        opera.replaceActor(new Actor("Валерий", "Михеев", GENDER.MALE, 192), act1);
+        opera.replaceActor("Смекалов", new Actor("Валерий", "Михеев", GENDER.MALE, 192));
         printActorsShow(opera);
 
-        System.out.println(opera.getLibrettoText() + "\n");
-        System.out.println(ballet.getLibrettoText());
+        System.out.println(opera.librettoText + "\n");
+        System.out.println(ballet.librettoText);
     }
 
     public static void printActorsShow(Show show) {
